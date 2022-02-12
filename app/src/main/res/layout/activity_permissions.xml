@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0c5177"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:gravity="center"
+    tools:context=".PermissionsActivity">
+
+    <TextView
+        android:id="@+id/permissions_TV_mainMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/main_message_activity_permission_rational"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/permissions_BTN_deny_permission_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickDenyPermissionRequest"
+        android:text="@string/no_thanks_activity_permission_rational"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="15dp"/>
+
+    <Button
+        android:id="@+id/permissions_BTN_approve_permission_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickApprovePermissionRequest"
+        android:text="@string/continue_activity_permission_rational"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
